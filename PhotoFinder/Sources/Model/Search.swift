@@ -11,9 +11,9 @@ struct SearchRequest: ModelType {
   let page: Int
 }
 
-struct SearchResponse: ModelType, KakaoResponse {
-  let msg: String?
-  let code: Int?
+struct SearchResponse: ModelType, DaumResponse {
+  let message: String?
+  let errorType: String?
   let meta: SearchMeta?
   let documents: [SearchDocument]?
 }

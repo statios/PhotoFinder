@@ -19,6 +19,7 @@
 		AFCC823E249E79A800E7DA70 /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC823D249E79A800E7DA70 /* Vision.swift */; };
 		AFCC8240249E7B4300E7DA70 /* KakaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC823F249E7B4300E7DA70 /* KakaoService.swift */; };
 		AFCC8242249E969600E7DA70 /* KakaoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8241249E969600E7DA70 /* KakaoResponse.swift */; };
+		AFCC8244249EA66C00E7DA70 /* DaumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8243249EA66C00E7DA70 /* DaumResponse.swift */; };
 		EBF03FCD702A3A0794047AC2 /* Pods_PhotoFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61612F5355BE4635C4E7253E /* Pods_PhotoFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		AFCC823D249E79A800E7DA70 /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
 		AFCC823F249E7B4300E7DA70 /* KakaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoService.swift; sourceTree = "<group>"; };
 		AFCC8241249E969600E7DA70 /* KakaoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoResponse.swift; sourceTree = "<group>"; };
+		AFCC8243249EA66C00E7DA70 /* DaumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumResponse.swift; sourceTree = "<group>"; };
 		BEC9B2B32B7D94DE47E05EE8 /* Pods-PhotoFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFinder.debug.xcconfig"; path = "Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		F20A3BC647542EF8C1654606 /* Pods-PhotoFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFinder.release.xcconfig"; path = "Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				AFCC8239249E777500E7DA70 /* ModelType.swift */,
+				AFCC8243249EA66C00E7DA70 /* DaumResponse.swift */,
 				AFCC8241249E969600E7DA70 /* KakaoResponse.swift */,
 				AFCC823B249E77A600E7DA70 /* Search.swift */,
 				AFCC823D249E79A800E7DA70 /* Vision.swift */,
@@ -301,6 +304,7 @@
 				AFCC823A249E777500E7DA70 /* ModelType.swift in Sources */,
 				AFCC8216249E6ED400E7DA70 /* SearchViewController.swift in Sources */,
 				AFCC8212249E6ED400E7DA70 /* AppDelegate.swift in Sources */,
+				AFCC8244249EA66C00E7DA70 /* DaumResponse.swift in Sources */,
 				AFCC823C249E77A600E7DA70 /* Search.swift in Sources */,
 				AFCC8232249E741900E7DA70 /* KakaoAPI.swift in Sources */,
 				AFCC8242249E969600E7DA70 /* KakaoResponse.swift in Sources */,
