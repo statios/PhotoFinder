@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFCC8212249E6ED400E7DA70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8211249E6ED400E7DA70 /* AppDelegate.swift */; };
+		AFCC8216249E6ED400E7DA70 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8215249E6ED400E7DA70 /* SearchViewController.swift */; };
+		AFCC821B249E6ED500E7DA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCC821A249E6ED500E7DA70 /* Assets.xcassets */; };
+		AFCC8229249E701000E7DA70 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCC8228249E701000E7DA70 /* Launch Screen.storyboard */; };
+		AFCC822E249E738C00E7DA70 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC822D249E738C00E7DA70 /* BaseViewController.swift */; };
+		AFCC8232249E741900E7DA70 /* KakaoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8231249E741900E7DA70 /* KakaoAPI.swift */; };
+		AFCC8236249E74D600E7DA70 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AFCC8235249E74D600E7DA70 /* .swiftlint.yml */; };
+		AFCC823A249E777500E7DA70 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8239249E777500E7DA70 /* ModelType.swift */; };
+		AFCC823C249E77A600E7DA70 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC823B249E77A600E7DA70 /* Search.swift */; };
+		AFCC823E249E79A800E7DA70 /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC823D249E79A800E7DA70 /* Vision.swift */; };
+		AFCC8240249E7B4300E7DA70 /* KakaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC823F249E7B4300E7DA70 /* KakaoService.swift */; };
+		AFCC8242249E969600E7DA70 /* KakaoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8241249E969600E7DA70 /* KakaoResponse.swift */; };
+		EBF03FCD702A3A0794047AC2 /* Pods_PhotoFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61612F5355BE4635C4E7253E /* Pods_PhotoFinder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61612F5355BE4635C4E7253E /* Pods_PhotoFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCC820E249E6ED400E7DA70 /* PhotoFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCC8211249E6ED400E7DA70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFCC8215249E6ED400E7DA70 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AFCC821A249E6ED500E7DA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFCC821F249E6ED500E7DA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCC8228249E701000E7DA70 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		AFCC822D249E738C00E7DA70 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AFCC8231249E741900E7DA70 /* KakaoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAPI.swift; sourceTree = "<group>"; };
+		AFCC8235249E74D600E7DA70 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AFCC8239249E777500E7DA70 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		AFCC823B249E77A600E7DA70 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		AFCC823D249E79A800E7DA70 /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
+		AFCC823F249E7B4300E7DA70 /* KakaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoService.swift; sourceTree = "<group>"; };
+		AFCC8241249E969600E7DA70 /* KakaoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoResponse.swift; sourceTree = "<group>"; };
+		BEC9B2B32B7D94DE47E05EE8 /* Pods-PhotoFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFinder.debug.xcconfig"; path = "Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		F20A3BC647542EF8C1654606 /* Pods-PhotoFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFinder.release.xcconfig"; path = "Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFCC820B249E6ED400E7DA70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF03FCD702A3A0794047AC2 /* Pods_PhotoFinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C62E7C8409723BE4CF8028F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEC9B2B32B7D94DE47E05EE8 /* Pods-PhotoFinder.debug.xcconfig */,
+				F20A3BC647542EF8C1654606 /* Pods-PhotoFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91959508BC2CA0CFB3D04D22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61612F5355BE4635C4E7253E /* Pods_PhotoFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFCC8205249E6ED400E7DA70 = {
+			isa = PBXGroup;
+			children = (
+				AFCC8235249E74D600E7DA70 /* .swiftlint.yml */,
+				AFCC8210249E6ED400E7DA70 /* PhotoFinder */,
+				AFCC820F249E6ED400E7DA70 /* Products */,
+				3C62E7C8409723BE4CF8028F /* Pods */,
+				91959508BC2CA0CFB3D04D22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFCC820F249E6ED400E7DA70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC820E249E6ED400E7DA70 /* PhotoFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFCC8210249E6ED400E7DA70 /* PhotoFinder */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC8227249E6FC300E7DA70 /* Sources */,
+				AFCC8225249E6FB100E7DA70 /* Resources */,
+				AFCC8226249E6FB800E7DA70 /* Supports */,
+			);
+			path = PhotoFinder;
+			sourceTree = "<group>";
+		};
+		AFCC8225249E6FB100E7DA70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC821A249E6ED500E7DA70 /* Assets.xcassets */,
+				AFCC8228249E701000E7DA70 /* Launch Screen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFCC8226249E6FB800E7DA70 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC821F249E6ED500E7DA70 /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		AFCC8227249E6FC300E7DA70 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC8211249E6ED400E7DA70 /* AppDelegate.swift */,
+				AFCC822F249E73EA00E7DA70 /* Networks */,
+				AFCC8230249E73F500E7DA70 /* Services */,
+				AFCC822C249E727500E7DA70 /* ViewControllers */,
+				AFCC8238249E773C00E7DA70 /* Model */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AFCC822C249E727500E7DA70 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC822D249E738C00E7DA70 /* BaseViewController.swift */,
+				AFCC8215249E6ED400E7DA70 /* SearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AFCC822F249E73EA00E7DA70 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC8231249E741900E7DA70 /* KakaoAPI.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		AFCC8230249E73F500E7DA70 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC823F249E7B4300E7DA70 /* KakaoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AFCC8238249E773C00E7DA70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC8239249E777500E7DA70 /* ModelType.swift */,
+				AFCC8241249E969600E7DA70 /* KakaoResponse.swift */,
+				AFCC823B249E77A600E7DA70 /* Search.swift */,
+				AFCC823D249E79A800E7DA70 /* Vision.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFCC820D249E6ED400E7DA70 /* PhotoFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCC8222249E6ED500E7DA70 /* Build configuration list for PBXNativeTarget "PhotoFinder" */;
+			buildPhases = (
+				7550A499D64F334492DA32DD /* [CP] Check Pods Manifest.lock */,
+				AFCC8237249E74E200E7DA70 /* ShellScript */,
+				AFCC820A249E6ED400E7DA70 /* Sources */,
+				AFCC820B249E6ED400E7DA70 /* Frameworks */,
+				AFCC820C249E6ED400E7DA70 /* Resources */,
+				5370ADBC1A717A66A7587985 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoFinder;
+			productName = PhotoFinder;
+			productReference = AFCC820E249E6ED400E7DA70 /* PhotoFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFCC8206249E6ED400E7DA70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Stat.So;
+				TargetAttributes = {
+					AFCC820D249E6ED400E7DA70 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = AFCC8209249E6ED400E7DA70 /* Build configuration list for PBXProject "PhotoFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFCC8205249E6ED400E7DA70;
+			productRefGroup = AFCC820F249E6ED400E7DA70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFCC820D249E6ED400E7DA70 /* PhotoFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFCC820C249E6ED400E7DA70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCC8236249E74D600E7DA70 /* .swiftlint.yml in Resources */,
+				AFCC8229249E701000E7DA70 /* Launch Screen.storyboard in Resources */,
+				AFCC821B249E6ED500E7DA70 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5370ADBC1A717A66A7587985 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7550A499D64F334492DA32DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFCC8237249E74E200E7DA70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFCC820A249E6ED400E7DA70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCC823A249E777500E7DA70 /* ModelType.swift in Sources */,
+				AFCC8216249E6ED400E7DA70 /* SearchViewController.swift in Sources */,
+				AFCC8212249E6ED400E7DA70 /* AppDelegate.swift in Sources */,
+				AFCC823C249E77A600E7DA70 /* Search.swift in Sources */,
+				AFCC8232249E741900E7DA70 /* KakaoAPI.swift in Sources */,
+				AFCC8242249E969600E7DA70 /* KakaoResponse.swift in Sources */,
+				AFCC8240249E7B4300E7DA70 /* KakaoService.swift in Sources */,
+				AFCC823E249E79A800E7DA70 /* Vision.swift in Sources */,
+				AFCC822E249E738C00E7DA70 /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AFCC8220249E6ED500E7DA70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFCC8221249E6ED500E7DA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFCC8223249E6ED500E7DA70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC9B2B32B7D94DE47E05EE8 /* Pods-PhotoFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
+				INFOPLIST_FILE = PhotoFinder/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.statios.PhotoFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AFCC8224249E6ED500E7DA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20A3BC647542EF8C1654606 /* Pods-PhotoFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
+				INFOPLIST_FILE = PhotoFinder/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.statios.PhotoFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFCC8209249E6ED400E7DA70 /* Build configuration list for PBXProject "PhotoFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCC8220249E6ED500E7DA70 /* Debug */,
+				AFCC8221249E6ED500E7DA70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCC8222249E6ED500E7DA70 /* Build configuration list for PBXNativeTarget "PhotoFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCC8223249E6ED500E7DA70 /* Debug */,
+				AFCC8224249E6ED500E7DA70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFCC8206249E6ED400E7DA70 /* Project object */;
+}
