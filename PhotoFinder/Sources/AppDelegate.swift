@@ -10,6 +10,8 @@ import UIKit
 import RxSwift
 import Then
 import SnapKit
+import RxCocoa
+import Kingfisher
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,11 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
+    
+    let serviceProvider = ServiceProvider()
+    let searchViewReactor = SearchViewReactor(provider: serviceProvider)
+    let searchViewController = SearchViewController(reactor: searchViewReactor)
+    let navigationController = BaseNavigationController(rootViewController: searchViewController)
+    
     let window = UIWindow(frame: UIScreen.main.bounds)
     window.backgroundColor = .white
     window.makeKeyAndVisible()
-    let searchViewController = SearchViewController()
-    window.rootViewController = searchViewController
+    window.rootViewController = navigationController
+    
     self.window = window
     return true
   }

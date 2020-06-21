@@ -6,31 +6,32 @@
 //  Copyright © 2020 Stat.So. All rights reserved.
 //
 
-struct SearchRequest: ModelType {
+struct SearchRequest: Codable {
   let query: String
-  let page: Int
+  var page: Int = 1
 }
 
-struct SearchResponse: ModelType, DaumResponse {
-  let message: String?
-  let errorType: String?
-  let meta: SearchMeta?
-  let documents: [SearchDocument]?
+struct SearchResponse: Codable, Equatable {
+  var meta: SearchMeta
+  var documents: [SearchDocument]
 }
 
-struct SearchMeta: Codable {
+struct SearchMeta: Codable, Equatable {
   let isEnd: Bool
   let pageableCount: Int
   let totalCount: Int
+  var query: String?
+  var page: Int = 1
   
   enum CodingKeys: String, CodingKey {
     case isEnd = "is_end"
     case pageableCount = "pageable_count"
     case totalCount = "total_count"
+    case query
   }
 }
 
-struct SearchDocument: Codable {
+struct SearchDocument: Codable, Equatable {
   let collection: String
   let datetime: String
   let displaySitename: String
@@ -49,4 +50,9 @@ struct SearchDocument: Codable {
     case thumbnailURL = "thumbnail_url"
     case width
   }
+}
+
+class SearchErrorResponse: KakaoErrorResponse {
+  let message: String
+  let errorType: String
 }

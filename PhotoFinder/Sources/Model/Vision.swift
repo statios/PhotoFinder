@@ -6,19 +6,28 @@
 //  Copyright © 2020 Stat.So. All rights reserved.
 //
 
-struct VisionRequest: ModelType {
+struct VisionRequest: Codable {
   let imageURL: String
 }
-struct VisionResponse: ModelType, KakaoResponse {
-  let msg: String?
-  let code: Int?
-  let result: VisionResult?
+
+struct VisionResponse: Codable {
+  let result: VisionResult
 }
-struct VisionResult: ModelType {
+
+struct VisionResult: Codable {
   let koreanLabels: [String]
   let englishLabels: [String]
   enum CodingKeys: String, CodingKey {
     case koreanLabels = "label_kr"
     case englishLabels = "label"
+  }
+}
+
+class VisionErrorResponse: KakaoErrorResponse {
+  let message: String
+  let code: Int
+  enum CodingKeys: String, CodingKey {
+    case message = "msg"
+    case code
   }
 }
