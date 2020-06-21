@@ -59,7 +59,11 @@ class SearchViewController: BaseViewController, View {
       .bind(to: reactor.action)
       .disposed(by: self.disposeBag)
     self.searchTableView.rx.willDisplayCell
-      .filter { $0.indexPath.row == self.searchDocuments.count - 1 }
+      .map { $0.indexPath }
+      .filter { [weak self] indexPath in
+        guard let `self` = self else { return false }
+        return indexPath.row == self.searchDocuments.count - 1
+      }
       .map { _ in Reactor.Action.pagination }
       .bind(to: reactor.action)
       .disposed(by: self.disposeBag)

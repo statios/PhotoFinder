@@ -9,7 +9,6 @@
 import ReactorKit
 
 class SearchViewReactor: Reactor {
-  let disposeBag = DisposeBag()
   enum Action {
     case search(String)
     case pagination
