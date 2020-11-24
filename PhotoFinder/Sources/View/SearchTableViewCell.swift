@@ -9,19 +9,24 @@
 import UIKit
 
 class SearchTableViewCell: BaseTableViewCell {
+  
   static let reuseIdentifier = "SearchTableViewCell"
+  
   let thumbnailImageView = UIImageView().then {
     $0.clipsToBounds = true
     $0.contentMode = .scaleAspectFill
   }
+  
   override func prepareForReuse() {
     super.prepareForReuse()
     self.thumbnailImageView.image = nil
   }
+  
   override func initialize() {
     super.initialize()
     self.contentView.addSubview(self.thumbnailImageView)
   }
+  
   override func layoutSubviews() {
     super.layoutSubviews()
     self.thumbnailImageView.snp.makeConstraints { make in
@@ -31,7 +36,9 @@ class SearchTableViewCell: BaseTableViewCell {
       make.width.equalTo(UIScreen.main.bounds.width-32)
     }
   }
+  
   func bindCellBy(_ item: SearchDocument) {
     self.thumbnailImageView.kf.setImage(with: URL(string: item.thumbnailURL))
   }
+  
 }

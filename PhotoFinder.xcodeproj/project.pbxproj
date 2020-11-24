@@ -18,12 +18,12 @@
 		AFCC8229249E701000E7DA70 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCC8228249E701000E7DA70 /* Launch Screen.storyboard */; };
 		AFCC822E249E738C00E7DA70 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC822D249E738C00E7DA70 /* BaseViewController.swift */; };
 		AFCC8232249E741900E7DA70 /* KakaoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8231249E741900E7DA70 /* KakaoAPI.swift */; };
-		AFCC8236249E74D600E7DA70 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AFCC8235249E74D600E7DA70 /* .swiftlint.yml */; };
 		AFCC823C249E77A600E7DA70 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC823B249E77A600E7DA70 /* Search.swift */; };
 		AFCC823E249E79A800E7DA70 /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC823D249E79A800E7DA70 /* Vision.swift */; };
 		AFCC8240249E7B4300E7DA70 /* KakaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC823F249E7B4300E7DA70 /* KakaoService.swift */; };
 		AFCC8244249EA66C00E7DA70 /* KakaoErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8243249EA66C00E7DA70 /* KakaoErrorResponse.swift */; };
 		AFCC8246249EA83500E7DA70 /* SearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC8245249EA83500E7DA70 /* SearchViewReactor.swift */; };
+		AFE11CC92549F4D4003EB6E5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AFE11CC82549F4D4003EB6E5 /* .swiftlint.yml */; };
 		EBF03FCD702A3A0794047AC2 /* Pods_PhotoFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61612F5355BE4635C4E7253E /* Pods_PhotoFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,12 +42,12 @@
 		AFCC8228249E701000E7DA70 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		AFCC822D249E738C00E7DA70 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AFCC8231249E741900E7DA70 /* KakaoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAPI.swift; sourceTree = "<group>"; };
-		AFCC8235249E74D600E7DA70 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AFCC823B249E77A600E7DA70 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		AFCC823D249E79A800E7DA70 /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
 		AFCC823F249E7B4300E7DA70 /* KakaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoService.swift; sourceTree = "<group>"; };
 		AFCC8243249EA66C00E7DA70 /* KakaoErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoErrorResponse.swift; sourceTree = "<group>"; };
 		AFCC8245249EA83500E7DA70 /* SearchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewReactor.swift; sourceTree = "<group>"; };
+		AFE11CC82549F4D4003EB6E5 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		BEC9B2B32B7D94DE47E05EE8 /* Pods-PhotoFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFinder.debug.xcconfig"; path = "Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		F20A3BC647542EF8C1654606 /* Pods-PhotoFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFinder.release.xcconfig"; path = "Target Support Files/Pods-PhotoFinder/Pods-PhotoFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +93,6 @@
 		AFCC8205249E6ED400E7DA70 = {
 			isa = PBXGroup;
 			children = (
-				AFCC8235249E74D600E7DA70 /* .swiftlint.yml */,
 				AFCC8210249E6ED400E7DA70 /* PhotoFinder */,
 				AFCC820F249E6ED400E7DA70 /* Products */,
 				3C62E7C8409723BE4CF8028F /* Pods */,
@@ -132,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				AFCC821F249E6ED500E7DA70 /* Info.plist */,
+				AFE11CC82549F4D4003EB6E5 /* .swiftlint.yml */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCC8236249E74D600E7DA70 /* .swiftlint.yml in Resources */,
+				AFE11CC92549F4D4003EB6E5 /* .swiftlint.yml in Resources */,
 				AFCC8229249E701000E7DA70 /* Launch Screen.storyboard in Resources */,
 				AFCC821B249E6ED500E7DA70 /* Assets.xcassets in Resources */,
 			);
